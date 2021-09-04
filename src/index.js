@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Top from './views/pages/top/Top';
+import Detail from './views/pages/detail/Detail';
+import Study from './views/pages/study/Study';
+import { TerminalContextProvider } from "react-terminal";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <TerminalContextProvider>
+        <Route exact path="/" component={Top}></Route>
+        <Route exact path="/details/:course" component={Detail}></Route>
+        <Route exact path="/study/:course/:id" component={Study}></Route>
+      </TerminalContextProvider>
+    </React.StrictMode>
+  </Router>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

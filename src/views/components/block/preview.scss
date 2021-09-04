@@ -1,0 +1,42 @@
+.preview-area {
+  vertical-align: top;
+  display: inline-block;
+  width: 28%;
+  height: 650px;
+}
+
+.title {
+  height: 30px;
+  padding: 5px 10px;
+  background: #dfdfdf;
+  position: relative;
+}
+
+.title--sample  {
+  margin-top: 10px;
+}
+
+.preview {
+  border: solid 1px #dfdfdf;
+  height: 290px;
+  overflow: auto;
+}
+
+.answer {
+  border: solid 1px #dfdfdf;
+  height: 290px;
+  overflow: auto;
+}
+
+// terminal-in-react 上書き
+.terminal-base {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.execute {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  cursor: pointer;
+}

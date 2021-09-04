@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+#UNIQUE_ID_OF_DIV {
+  display: inline-block;
+  margin-right: 2%;
+  width: 45% !important;
+  height: 650px !important;
+}
+
+.editor-area {
+  margin-top: 20px;
+}
+
+.pveview {
+  vertical-align: top;
+  border: solid 1px #dfdfdf;
+  height: 500px;
+}
+
+.btn-area {
+  position: absolute;
+  width: 45%;
+  height: 50px;
+  left: 25%;
+  top: 685px;
+  background: #333;
+  z-index: 10;
+  padding: 5px;
+
+  .reset {
+    position: absolute;
+    left: 2%;
+    padding: 5px 20px;
+  }
+  
+  .submit {
+    position: absolute;
+    padding: 5px 20px;
+    margin-right: 5px;
+    right: 2%;
+  }
+}
+
+.wait {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+
+  .loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  }
+}

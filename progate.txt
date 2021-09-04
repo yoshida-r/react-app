@@ -1,0 +1,16 @@
+# react router
+npm install react-router-dom
+
+# reactコンポーネント内でjavascript製エディタAceを使う
+npm install react-ace
+
+# react materialUI
+npm install @material-ui/core
+npm install @material-ui/icons
+npm install @material-ui/lab
+
+# scss
+npm install node-sass@4.14.1
+
+# npm install --save react-terminal-ui
+npm install terminal-in-react --save
