@@ -11,7 +11,7 @@ import Study from './views/pages/study/Study';
 import { TerminalContextProvider } from "react-terminal";
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
       <TerminalContextProvider>
         <Route exact path="/" component={Top}></Route>
