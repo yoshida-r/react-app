@@ -9,7 +9,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['<h1>html<\/h1>', '<h2>html<\/h2>', '<h3>html<\/h3>'],
         errMes: ['<h1>タグがありません。', '<h2>タグがありません。', '<h3>タグがありません。'],
         setItem: 'html1',
-        reload: '/study/html/1'
+        reload: '/details/html'
       });
     } else if (num == '2') {
       return ({
@@ -20,7 +20,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['<p1>html<\/p1>', '<a href="https:\/\/google.com" target=_black>html<\/a>'],
         errMes: ['<p1>タグがありません。', '<a>タグがありません。'],
         setItem: 'html2',
-        reload: '/study/html/2'
+        reload: '/details/html'
       });
     } else {
       return ({
@@ -31,7 +31,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['<p1>レッスン3<\/p1>', '<a href="https:\/\/google.com" target=_black>レッスン3<\/a>'],
         errMes: ['<p1>タグがありません。', '<a>タグがありません。'],
         setItem: 'html3',
-        reload: '/study/html/3' 
+        reload: '/details/html' 
       });
     }
   } else if (lang === 'js') {
@@ -45,7 +45,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['greet\\(\\)\\;'],
         errMes: ['関数を呼び出してください。'],
         setItem: 'js1',
-        reload: '/study/js/1' 
+        reload: '/details/js' 
       });
     } else if (num == '2') {
       return ({
@@ -57,7 +57,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['let number = 0\\;', 'console.log\\(number\\)\\;'],
         errMes: ['変数numberを定義してください。', '変数numberに1を加えて、その後に変数numberの値を出力してください'],
         setItem: 'js2',
-        reload: '/study/js/2' 
+        reload: 'details/js' 
       });
     }
   } else if (lang === 'php') {

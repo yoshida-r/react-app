@@ -14,7 +14,8 @@ import Preview from './Preview';
 import styles from './editor.scss';
 import SelectInput from '@material-ui/core/Select/SelectInput';
 
-import { withRouter } from 'react-router'
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 
 class Editor extends React.Component {
   constructor(props) {
@@ -27,6 +28,12 @@ class Editor extends React.Component {
     };
     this.errorMessage = null;
     this.study = this.props.studyInfo;
+  }
+
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
   }
 
   render() {
@@ -91,7 +98,8 @@ class Editor extends React.Component {
       this.setState({wait: false});
       this.state.isAchieve = true;
       localStorage.setItem(this.study.setItem, true);
-      window.location.href = this.study.reload;
+      // window.location.href = this.study.reload;
+      this.props.history.push(this.study.reload);
     }, 1000);
   }
 
@@ -106,4 +114,4 @@ class Editor extends React.Component {
   }
 }
 
-export default Editor;
+export default withRouter(Editor);
