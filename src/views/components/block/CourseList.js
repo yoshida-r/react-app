@@ -13,7 +13,7 @@ class Editor extends React.Component {
   }
 
   render() {
-    let img = `./img/${this.props.img}.png`;
+    let img = `/react-app/img/${this.props.img}.png`;
     return (
       <div>
         <Link to={`/details/${this.props.lang}`}>
