@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 
 const DetailList = (props) => {
   let link = `/study/${props.lang}/${props.num}`;
-  let img = `./img/${props.lang}.png`;
+  let img = `/react-app/img/${props.lang}.png`;
   return (
     <div>
       <Card>

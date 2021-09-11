@@ -14,6 +14,8 @@ import Preview from './Preview';
 import styles from './editor.scss';
 import SelectInput from '@material-ui/core/Select/SelectInput';
 
+import { withRouter } from 'react-router'
+
 class Editor extends React.Component {
   constructor(props) {
     super(props);
@@ -95,7 +97,8 @@ class Editor extends React.Component {
 
   reset() {
     localStorage.removeItem(this.study.setItem);
-    window.location.href = this.study.reload;
+    // window.location.href = this.study.reload;
+    this.props.history.push(this.study.reload);
   }
 
   handleClose() {
