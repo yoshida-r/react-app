@@ -57,7 +57,7 @@ const StudyInfo = (lang, num) => {
         quesMatch: ['let number = 0\\;', 'console.log\\(number\\)\\;'],
         errMes: ['変数numberを定義してください。', '変数numberに1を加えて、その後に変数numberの値を出力してください'],
         setItem: 'js2',
-        reload: 'details/js' 
+        reload: '/details/js' 
       });
     }
   } else if (lang === 'php') {
