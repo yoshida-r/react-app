@@ -89,7 +89,7 @@ class Editor extends React.Component {
       this.setState({wait: false});
       this.state.isAchieve = true;
       localStorage.setItem(this.study.setItem, true);
-      window.location.href = this.study.reload;
+      window.location.href = window.location.host + this.study.reload;
     }, 1000);
   }
 
